@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#050914">
+  <meta name="description" content="AS Jadon Solutions - Websites, mobile apps and digital solutions.">
+  <title>AS Jadon Solutions | Websites & Apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true">
+    <div class="bg-orbit orbit-a"></div>
+    <div class="bg-orbit orbit-b"></div>
+    <div class="bg-orbit orbit-c"></div>
+    <div class="bg-glow glow-one"></div>
+    <div class="bg-glow glow-two"></div>
+    <div class="particle-field" id="particleField"></div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#home" aria-label="AS Jadon Solutions Home">
+      <span class="brand-mark">AJ</span>
+      <span class="brand-text">AS JADON <b>SOLUTIONS</b></span>
+    </a>
+
+    <div class="theme-control">
+      <button class="theme-btn" id="themeButton" aria-label="Open color controls" aria-expanded="false">🎨</button>
+      <div class="theme-panel" id="themePanel">
+        <div class="theme-head">
+          <strong>Theme</strong>
+          <button id="themeClose" aria-label="Close theme">×</button>
+        </div>
+        <div class="theme-row">
+          <span>Auto colors</span>
+          <button class="switch active" id="autoTheme" aria-pressed="true"><i></i></button>
+        </div>
+        <div class="theme-row">
+          <span>Pause color</span>
+          <button class="pause-theme" id="pauseTheme">⏸</button>
+        </div>
+        <div class="swatches" aria-label="Preset colors">
+          <button class="swatch sw-blue active" data-theme="#25bfff" title="Blue"></button>
+          <button class="swatch sw-purple" data-theme="#9b7cff" title="Purple"></button>
+          <button class="swatch sw-pink" data-theme="#ff62bd" title="Pink"></button>
+          <button class="swatch sw-green" data-theme="#49e6a5" title="Green"></button>
+          <button class="swatch sw-orange" data-theme="#ff9c5a" title="Orange"></button>
+          <button class="swatch sw-red" data-theme="#ff637d" title="Red"></button>
+          <button class="swatch sw-silver" data-theme="#b9d5ff" title="Silver"></button>
+          <button class="swatch sw-rainbow" data-theme="rainbow" title="Rainbow"></button>
+        </div>
+        <label class="intensity">Glow intensity
+          <input id="glowIntensity" type="range" min="30" max="100" value="72">
+        </label>
+        <label class="custom-color">Custom
+          <input id="customColor" type="color" value="#25bfff">
+        </label>
+      </div>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#plans">Plans</a>
+      <a href="#experience">Build</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-button" id="menuButton" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> DIGITAL BUILD STUDIO</div>
+        <h1>Build a <span>Powerful Website</span> or App for Your Business.</h1>
+        <p>Modern websites, mobile apps and digital solutions designed to look premium and work fast.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#plans">Explore Plans <span>→</span></a>
+          <button class="ghost-btn" id="chatToggle">Talk to AI <span>✦</span></button>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="world">
+          <div class="world-ring ring-1"></div>
+          <div class="world-ring ring-2"></div>
+          <div class="world-ring ring-3"></div>
+          <div class="world-core"><span>AJ</span></div>
+          <span class="node n1"></span><span class="node n2"></span><span class="node n3"></span>
+          <span class="node n4"></span><span class="node n5"></span><span class="node n6"></span>
+          <span class="orbit-dot d1"></span><span class="orbit-dot d2"></span><span class="orbit-dot d3"></span>
+          <div class="data-card card-one"><small>ONLINE USERS</small><strong>100K+</strong><i></i></div>
+          <div class="data-card card-two"><small>BUILD STATUS</small><strong>READY</strong><i></i></div>
+        </div>
+        <div class="user-counter">
+          <span class="counter-label">USERS REACHED</span>
+          <strong id="userCounter">0</strong>
+          <span class="counter-plus">+</span>
+          <small>Growing with every build</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans section" id="plans">
+      <div class="section-heading reveal">
+        <span class="eyebrow">SIMPLE PRICING</span>
+        <h2>Choose Your <span>Plan</span></h2>
+        <p>Start with the package that fits your business and upgrade whenever you need.</p>
+      </div>
+      <div class="plan-grid">
+        <article class="plan-card reveal plan-simple">
+          <div class="plan-top"><span class="plan-badge">STARTER</span><span class="plan-number">01</span></div>
+          <h3>SIMPLE</h3><div class="price">₹2,999</div><p class="plan-pages">2–3 Pages</p>
+          <ul><li>Responsive website</li><li>Fast loading design</li><li>Basic Google SEO</li><li>Social media links</li><li>WhatsApp enquiry</li></ul>
+          <button class="plan-btn" onclick="selectPlan('SIMPLE',2999,'2–3 Pages')">Select Plan <span>→</span></button>
+        </article>
+        <article class="plan-card featured reveal">
+          <div class="popular">MOST POPULAR</div>
+          <div class="plan-top"><span class="plan-badge">BUSINESS</span><span class="plan-number">02</span></div>
+          <h3>PRO</h3><div class="price">₹5,999</div><p class="plan-pages">5–7 Pages</p>
+          <ul><li>Everything in SIMPLE</li><li>Premium UI sections</li><li>More business photos</li><li>Advanced page structure</li><li>Conversion-focused layout</li></ul>
+          <button class="plan-btn" onclick="selectPlan('PRO',5999,'5–7 Pages')">Select Plan <span>→</span></button>
+        </article>
+        <article class="plan-card reveal plan-max">
+          <div class="plan-top"><span class="plan-badge">FULL</span><span class="plan-number">03</span></div>
+          <h3>MAX</h3><div class="price">₹9,999</div><p class="plan-pages">10+ Pages</p>
+          <ul><li>Everything in PRO</li><li>Large business website</li><li>More photos & sections</li><li>Custom UI experience</li><li>Growth-ready structure</li></ul>
+          <button class="plan-btn" onclick="selectPlan('MAX',9999,'10+ Pages')">Select Plan <span>→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="experience-intro reveal">
+        <span class="eyebrow">SCROLL TO BUILD</span>
+        <h2>Watch Your Digital Product <span>Come Alive.</span></h2>
+        <p>Scroll slowly. Each stage has its own 3D scene.</p>
+      </div>
+
+      <div class="build-stage">
+        <article class="build-scene scene-ai reveal">
+          <div class="scene-visual">
+            <div class="ai-core">
+              <div class="core-orbit"></div><div class="core-orbit orbit-x"></div>
+              <div class="core-face">✦</div>
+              <span class="core-node cn1"></span><span class="core-node cn2"></span><span class="core-node cn3"></span>
+            </div>
+            <div class="code-chip chip-a">ANALYZE</div>
+            <div class="code-chip chip-b">DESIGN</div>
+            <div class="code-chip chip-c">BUILD</div>
+            <div class="scene-grid"></div>
+          </div>
+          <div class="scene-copy"><span>01 / AI BUILD</span><h3>AI plans the experience.</h3><p>Ideas, structure and visual direction connect into one digital blueprint.</p></div>
+        </article>
+
+        <article class="build-scene scene-web reveal">
+          <div class="scene-visual">
+            <div class="laptop">
+              <div class="laptop-screen">
+                <div class="browser-bar"><i></i><i></i><i></i><b>AS JADON</b></div>
+                <div class="web-building">
+                  <div class="web-nav"></div><div class="web-hero-line"></div><div class="web-line short"></div>
+                  <div class="web-cards"><i></i><i></i><i></i></div><div class="web-footer"></div>
+                </div>
+              </div>
+              <div class="laptop-base"></div>
+            </div>
+            <span class="float-code fca">&lt;section&gt;</span><span class="float-code fcb">CSS</span><span class="float-code fcc">UI</span>
+          </div>
+          <div class="scene-copy"><span>02 / WEBSITE BUILD</span><h3>Your website assembles in 3D.</h3><p>Layout, navigation, cards and sections appear layer by layer.</p></div>
+        </article>
+
+        <article class="build-scene scene-app reveal">
+          <div class="scene-visual">
+            <div class="phone">
+              <div class="phone-screen">
+                <div class="phone-notch"></div>
+                <div class="app-head"><b>My Business</b><span>•••</span></div>
+                <div class="app-chart"><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="app-row"><i></i><i></i><i></i></div>
+                <div class="app-button">EXPLORE</div>
+              </div>
+            </div>
+            <span class="app-chip ac1">iOS</span><span class="app-chip ac2">ANDROID</span><span class="app-chip ac3">APP UI</span>
+          </div>
+          <div class="scene-copy"><span>03 / APP BUILD</span><h3>Your app takes shape.</h3><p>A polished mobile interface grows from an empty screen into a complete product.</p></div>
+        </article>
+
+        <article class="build-scene scene-final reveal">
+          <div class="scene-visual final-visual">
+            <div class="final-orbit"></div>
+            <div class="final-center">AJ</div>
+            <div class="final-item fi-web">WEB</div><div class="final-item fi-app">APP</div><div class="final-item fi-ai">AI</div><div class="final-item fi-users">100K+</div>
+            <div class="connection c1"></div><div class="connection c2"></div><div class="connection c3"></div><div class="connection c4"></div>
+          </div>
+          <div class="scene-copy"><span>04 / FINAL RESULT</span><h3>One connected digital presence.</h3><p>Website, app and AI experience working together for your business.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="section-heading reveal"><span class="eyebrow">WHY AS JADON</span><h2>Built to Look <span>Premium.</span></h2><p>Clean technology, responsive design and a focused customer journey.</p></div>
+      <div class="feature-grid">
+        <div class="feature-card reveal"><b>01</b><h3>Responsive</h3><p>Designed for phones, tablets, laptops and large screens.</p></div>
+        <div class="feature-card reveal"><b>02</b><h3>Fast</h3><p>Lightweight front-end structure for a quick browsing experience.</p></div>
+        <div class="feature-card reveal"><b>03</b><h3>Modern UI</h3><p>Premium glass, glow, depth and smooth interaction details.</p></div>
+        <div class="feature-card reveal"><b>04</b><h3>Business Ready</h3><p>Clear sections, plans, social links and WhatsApp enquiry flow.</p></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-card reveal">
+        <div><span class="eyebrow">READY TO BUILD?</span><h2>Let's create something <span>great.</span></h2><p>Choose a plan and send your project details directly on WhatsApp.</p></div>
+        <a class="primary-btn" href="#plans">View Plans <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <div class="ai-mascot" id="aiMascot" aria-label="Open AI assistant" role="button" tabindex="0">
+    <div class="ai-speech">Hi! ✨</div>
+    <div class="ai-doll">
+      <div class="doll-hair"></div>
+      <div class="doll-head">
+        <div class="eye left"><span></span></div><div class="eye right"><span></span></div>
+        <div class="blush blush-l"></div><div class="blush blush-r"></div><div class="mouth"></div>
+      </div>
+      <div class="doll-neck"></div>
+      <div class="doll-body"><div class="heart">✦</div></div>
+      <div class="doll-shadow"></div>
+    </div>
+  </div>
+
+  <aside class="chat-window" id="chatWindow" aria-hidden="true">
+    <div class="chat-head"><div><b>Jadon AI</b><small>Online • Ready to help</small></div><button id="chatClose">×</button></div>
+    <div class="chat-body"><div class="bot-message">Hi! I can help you choose a website plan. ✨</div><div class="bot-message">Which type of project are you planning?</div></div>
+    <div class="chat-actions">
+      <button data-plan="simple">SIMPLE ₹2,999</button><button data-plan="pro">PRO ₹5,999</button><button data-plan="max">MAX ₹9,999</button>
+    </div>
+  </aside>
+
+  <div class="modal" id="enquiryModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <span class="eyebrow">PROJECT ENQUIRY</span><h2><span id="selectedPlanName">PLAN</span></h2><p id="selectedPlanInfo">Choose your package.</p>
+      <form id="enquiryForm">
+        <label>Name<input id="name" type="text" autocomplete="name" required></label>
+        <label>Gmail<input id="email" type="email" autocomplete="email" required></label>
+        <label>Mobile<input id="mobile" type="tel" inputmode="numeric" maxlength="10" required></label>
+        <label>Business / Shop Name<input id="business" type="text" required></label>
+        <label>Business Location<input id="location" type="text" required></label>
+        <button class="primary-btn form-submit" type="submit">Continue <span>→</span></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="policyModal" aria-hidden="true">
+    <div class="modal-content policy-content"><button class="modal-close" onclick="closePolicy()">×</button><span class="eyebrow">LEGAL</span><h2 id="policyTitle">Privacy Policy</h2><div id="policyContent"></div></div>
+  </div>
+
+  <footer class="footer">
+    <div><strong>AS JADON SOLUTIONS</strong><p>Websites • Apps • Digital Solutions</p></div>
+    <div class="footer-links"><button onclick="openPolicy('privacy')">Privacy</button><button onclick="openPolicy('terms')">Terms</button><button onclick="openPolicy('refund')">Refund</button></div>
+    <small>© <span id="year"></span> AS Jadon Solutions. All rights reserved.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
