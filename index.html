@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AS Jadon Solutions | Website Development</title>
+    <meta name="description" content="AS Jadon Solutions creates fast, responsive and professional websites for businesses.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="world-bg">
+        <div class="world-grid"></div>
+        <div class="glow-orb orb-one"></div>
+        <div class="glow-orb orb-two"></div>
+        <div class="glow-orb orb-three"></div>
+
+        <div class="network">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+
+        <div class="digital-ring ring-one"></div>
+        <div class="digital-ring ring-two"></div>
+    </div>
+
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="#" class="brand">
+
+            <div class="as-logo">
+                <span>A</span>
+                <span>S</span>
+            </div>
+
+            <div class="brand-text">
+                <strong>AS Jadon</strong>
+                <small>Solutions</small>
+            </div>
+
+        </a>
+
+        <button class="nav-plan-btn" onclick="scrollToPlans()">
+            View Plans
+            <span>↗</span>
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="mini-badge">
+                    <span class="pulse-dot"></span>
+                    DIGITAL WORLD • WEBSITE DEVELOPMENT
+                </div>
+
+                <h1>
+                    Your Business
+                    <span>Deserves a Digital Home.</span>
+                </h1>
+
+                <p>
+                    Professional, responsive and fast websites designed
+                    to make your business look trusted online.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn" onclick="scrollToPlans()">
+                        Explore Website Plans
+                        <span>→</span>
+                    </button>
+
+                    <button class="secondary-btn" onclick="openChat()">
+                        Ask Jadon AI
+                    </button>
+
+                </div>
+
+                <div class="hero-trust">
+
+                    <div>
+                        <b>100%</b>
+                        <span>Responsive</span>
+                    </div>
+
+                    <div>
+                        <b>Fast</b>
+                        <span>Loading</span>
+                    </div>
+
+                    <div>
+                        <b>SEO</b>
+                        <span>Basic Ready</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 3D DIGITAL WORLD -->
+            <div class="digital-world">
+
+                <div class="planet">
+
+                    <div class="planet-core"></div>
+
+                    <div class="planet-line line-a"></div>
+                    <div class="planet-line line-b"></div>
+                    <div class="planet-line line-c"></div>
+
+                    <div class="planet-dot dot-a"></div>
+                    <div class="planet-dot dot-b"></div>
+                    <div class="planet-dot dot-c"></div>
+                    <div class="planet-dot dot-d"></div>
+
+                </div>
+
+                <div class="orbit orbit-a"></div>
+                <div class="orbit orbit-b"></div>
+                <div class="orbit orbit-c"></div>
+
+                <div class="floating-card card-a">
+                    <span>WEB</span>
+                    <small>ONLINE</small>
+                </div>
+
+                <div class="floating-card card-b">
+                    <span>SEO</span>
+                    <small>VISIBLE</small>
+                </div>
+
+                <div class="floating-card card-c">
+                    <span>24/7</span>
+                    <small>ONLINE</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PLANS -->
+        <section class="plans-section" id="plans">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    WEBSITE PLANS
+                </div>
+
+                <h2>
+                    Choose Your
+                    <span>Digital Level</span>
+                </h2>
+
+                <p>
+                    Select a plan that fits your business.
+                    After selecting, submit your details and we will contact you on WhatsApp.
+                </p>
+
+            </div>
+
+
+            <div class="plans-grid">
+
+
+                <!-- SIMPLE -->
+                <article class="plan-card" data-plan="SIMPLE">
+
+                    <div class="plan-top">
+                        <span class="plan-number">01</span>
+                        <span class="plan-tag">STARTER</span>
+                    </div>
+
+                    <h3>SIMPLE</h3>
+
+                    <div class="price">
+                        ₹2,999
+                    </div>
+
+                    <div class="pages">
+                        2–3 Pages
+                    </div>
+
+                    <div class="plan-line"></div>
+
+                    <ul>
+                        <li>✓ Home / About / Contact</li>
+                        <li>✓ Responsive Design</li>
+                        <li>✓ Professional UI</li>
+                        <li>✓ Limited Photos</li>
+                        <li>✓ Business Location</li>
+                        <li>✓ WhatsApp Message Button</li>
+                        <li>✓ Basic Google SEO</li>
+                        <li>✓ Social Media Links</li>
+                        <li>✓ Fast Loading</li>
+                    </ul>
+
+                    <button class="plan-btn" onclick="selectPlan('SIMPLE', 2999, '2–3 Pages')">
+                        Choose SIMPLE
+                        <span>→</span>
+                    </button>
+
+                </article>
+
+
+                <!-- PRO -->
+                <article class="plan-card featured" data-plan="PRO">
+
+                    <div class="popular">
+                        MOST POPULAR
+                    </div>
+
+                    <div class="plan-top">
+                        <span class="plan-number">02</span>
+                        <span class="plan-tag">BUSINESS</span>
+                    </div>
+
+                    <h3>PRO</h3>
+
+                    <div class="price">
+                        ₹5,999
+                    </div>
+
+                    <div class="pages">
+                        5–7 Pages
+                    </div>
+
+                    <div class="plan-line"></div>
+
+                    <ul>
+                        <li>✓ Home / About / Services</li>
+                        <li>✓ Products / Portfolio</li>
+                        <li>✓ Gallery / Contact / FAQ</li>
+                        <li>✓ Custom Professional Design</li>
+                        <li>✓ Limited Photos</li>
+                        <li>✓ Business Location</li>
+                        <li>✓ WhatsApp Message Button</li>
+                        <li>✓ Basic Google SEO</li>
+                        <li>✓ Social Media Integration</li>
+                        <li>✓ Basic Animations</li>
+                        <li>✓ Fast Loading</li>
+                    </ul>
+
+                    <button class="plan-btn" onclick="selectPlan('PRO', 5999, '5–7 Pages')">
+                        Choose PRO
+                        <span>→</span>
+                    </button>
+
+                </article>
+
+
+                <!-- MAX -->
+                <article class="plan-card" data-plan="MAX">
+
+                    <div class="plan-top">
+                        <span class="plan-number">03</span>
+                        <span class="plan-tag">PREMIUM</span>
+                    </div>
+
+                    <h3>MAX</h3>
+
+                    <div class="price">
+                        ₹9,999
+                    </div>
+
+                    <div class="pages">
+                        10+ Pages
+                    </div>
+
+                    <div class="plan-line"></div>
+
+                    <ul>
+                        <li>✓ Home / About / Services</li>
+                        <li>✓ Products / Portfolio</li>
+                        <li>✓ Gallery / Blog / Updates</li>
+                        <li>✓ FAQ / Contact</li>
+                        <li>✓ Other Required Pages</li>
+                        <li>✓ Premium Custom UI</li>
+                        <li>✓ More Photos</li>
+                        <li>✓ Business Location</li>
+                        <li>✓ WhatsApp Message Button</li>
+                        <li>✓ Basic Google SEO</li>
+                        <li>✓ Social Integration</li>
+                        <li>✓ Advanced Frontend Animations</li>
+                        <li>✓ Responsive + Fast</li>
+                    </ul>
+
+                    <button class="plan-btn" onclick="selectPlan('MAX', 9999, '10+ Pages')">
+                        Choose MAX
+                        <span>→</span>
+                    </button>
+
+                </article>
+
+            </div>
+
+
+            <div class="no-hidden-cost">
+
+                <div class="cost-icon">✓</div>
+
+                <div>
+                    <strong>Simple & Transparent</strong>
+                    <span>
+                        No hosting included. No backend or database included.
+                        Website development only.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="cta-section">
+
+            <div class="cta-glow"></div>
+
+            <div class="cta-content">
+
+                <span>READY TO GO ONLINE?</span>
+
+                <h2>
+                    Let's Build Your
+                    <strong>Digital Presence.</strong>
+                </h2>
+
+                <p>
+                    Select a plan and send us your business details.
+                </p>
+
+                <button onclick="scrollToPlans()" class="primary-btn">
+                    View Website Plans →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-brand">
+
+            <div class="as-logo small">
+                <span>A</span>
+                <span>S</span>
+            </div>
+
+            <div>
+                <strong>AS Jadon Solutions</strong>
+                <small>Website & Mobile App Development</small>
+            </div>
+
+        </div>
+
+        <div class="footer-links">
+            <button onclick="openPolicy('privacy')">Privacy Policy</button>
+            <button onclick="openPolicy('terms')">Terms & Conditions</button>
+            <button onclick="openPolicy('refund')">Refund Policy</button>
+        </div>
+
+        <p>
+            © 2026 AS Jadon Solutions. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- AI TOY -->
+    <div class="ai-character" id="aiToy" onclick="openChat()">
+
+        <div class="hello-bubble" id="helloBubble">
+            Hello! 👋
+        </div>
+
+        <div class="toy-shadow"></div>
+
+        <div class="toy-body">
+
+            <div class="toy-antenna">
+                <span></span>
+            </div>
+
+            <div class="toy-head">
+
+                <div class="ear left-ear"></div>
+                <div class="ear right-ear"></div>
+
+                <div class="face">
+
+                    <div class="eye eye-left">
+                        <span class="pupil"></span>
+                    </div>
+
+                    <div class="eye eye-right">
+                        <span class="pupil"></span>
+                    </div>
+
+                    <div class="cute-mouth"></div>
+
+                </div>
+
+            </div>
+
+            <div class="toy-neck"></div>
+
+            <div class="toy-chest">
+
+                <div class="chest-light"></div>
+
+                <div class="chest-screen">
+                    AS
+                </div>
+
+            </div>
+
+            <div class="toy-arm arm-left"></div>
+            <div class="toy-arm arm-right"></div>
+
+            <div class="toy-foot foot-left"></div>
+            <div class="toy-foot foot-right"></div>
+
+        </div>
+
+        <div class="toy-label">
+            JADON AI
+        </div>
+
+    </div>
+
+
+    <!-- AI CHAT -->
+    <div class="ai-chat" id="aiChat">
+
+        <div class="chat-header">
+
+            <div class="chat-avatar">
+                AS
+            </div>
+
+            <div>
+                <strong>Jadon AI</strong>
+                <small>Online Assistant</small>
+            </div>
+
+            <button onclick="closeChat()">×</button>
+
+        </div>
+
+
+        <div class="chat-messages" id="chatMessages">
+
+            <div class="message bot">
+                Hello! 👋 I'm Jadon AI.
+                <br><br>
+                I can help you choose the right website plan.
+            </div>
+
+        </div>
+
+
+        <div class="quick-options">
+
+            <button onclick="aiQuestion('simple')">
+                SIMPLE Plan
+            </button>
+
+            <button onclick="aiQuestion('pro')">
+                PRO Plan
+            </button>
+
+            <button onclick="aiQuestion('max')">
+                MAX Plan
+            </button>
+
+            <button onclick="aiQuestion('contact')">
+                Contact
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ENQUIRY MODAL -->
+    <div class="modal" id="enquiryModal">
+
+        <div class="modal-box">
+
+            <button class="modal-close" onclick="closeEnquiry()">
+                ×
+            </button>
+
+            <div class="modal-icon">
+                AS
+            </div>
+
+            <span class="modal-label">
+                WEBSITE ENQUIRY
+            </span>
+
+            <h2>
+                Tell Us About Your Business
+            </h2>
+
+            <p>
+                Selected plan:
+                <strong id="selectedPlanText">SIMPLE</strong>
+            </p>
+
+            <form id="enquiryForm">
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="customerEmail"
+                    placeholder="Your Gmail Address"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="customerMobile"
+                    placeholder="Mobile Number"
+                    maxlength="10"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="businessName"
+                    placeholder="Business / Shop Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="businessLocation"
+                    placeholder="Business Location"
+                    required
+                >
+
+                <button type="submit" class="whatsapp-submit">
+                    Send Enquiry on WhatsApp
+                    <span>→</span>
+                </button>
+
+            </form>
+
+            <small class="form-note">
+                Your details will open in WhatsApp for enquiry.
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <!-- POLICY MODAL -->
+    <div class="modal" id="policyModal">
+
+        <div class="modal-box policy-box">
+
+            <button class="modal-close" onclick="closePolicy()">
+                ×
+            </button>
+
+            <span class="modal-label">
+                AS JADON SOLUTIONS
+            </span>
+
+            <h2 id="policyTitle">
+                Privacy Policy
+            </h2>
+
+            <div id="policyContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+  </html>
